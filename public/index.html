@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/css/background.css">
+    <link rel="stylesheet" href="/public/css/card.css">
+    <link rel="icon" href="https://github.com/ottomated/CrewLink/raw/master/logo.png" type="image/x-icon">
+    <title>Deeana's B-Day Card!</title>
+</head>
+
+<body>
+    <!-- Star Animation -->
+    <div id="dont-know"></div>
+    <div id="what-im-doing"></div>
+    <!-- <div id="foreground"></div> -->
+    <section class="row">
+        <h1 class="col-sm-12 col-md-8">Happy Birthday, Diana!</h1>
+        <div class="col-sm-10 col-md-3">
+          <a class="button" href="/make-card"> Click To Write a Card!</a>
+        </div>
+    </section>
+    <main>
+        <section class='row' id='card-contain'>
+            <!-- Hard Coded Cards for Styling -->
+            <article class="col-8 col-md-4 col-lg-2 note-card note-border" data-id="605cf3a98597d847e4a09c8c">
+                <h2 class="note">This would be more useful if I actually wrote something in here that may be the length someone would
+                    write 🤣</h2>
+                <h4 class="signature"> - Dog Pie</h4>
+                <img class="img" src="../img/card/borderlands-01.png">
+            </article>
+
+            <article class="col-12 col-md-4 col-lg-2 note-card note-mine" data-id="605d15df582f1173c4e695bd">
+                <h2>My Second Note</h2>
+                <h4> - Pee Butt</h4>
+                <img class="img" src="../img/card/mineGrass-01.png">
+            </article>
+
+            <article class="col-12 col-md-4 col-lg-2 note-card note-age" data-id="605d15df582f1173c4e695bd">
+                <h2>Well this is kinda wierd isnt it????</h2>
+                <h4> - Pee Butt</h4>
+                <img class="img" src="../img/card/ageEmpire-01.png">
+            </article>
+        </section>
+    </main>
+
+
+    
+    <form class="validate">
+
+        <section class="modal fade login" role="dialog" id="validateModal">
+          <article class="modal-dialog">
+            <div class="modal-content cont modals">
+                <article id="change" class="col-8 col-md-4 col-lg-2 note-card note-border" data-id="605cf3a98597d847e4a09c8c">
+                    <h2 class="note">This would be more useful if I actually wrote something in here that may be the length someone would
+                        write 🤣</h2>
+                    <h4 class="signature"> - Dog Pie</h4>
+                    <img id="img-target" class="img" src="../img/card/borderlands-01.png">
+                </article>
+            </div>
+          </article>
+        </section>
+    
+      </form>
+    
+     
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="/public/js/card.js"></script>
+</body>
+
+</html>

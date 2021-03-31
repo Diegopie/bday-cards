@@ -1,0 +1,173 @@
+body {
+    padding: 10px 20px;
+    margin: 10px 20px;
+    color: white;
+    background-color: transparent;
+}
+
+h1 {
+    font: 6vmin/1.3 Serif;
+}
+
+a {
+    color: inherit;
+}
+
+.index {
+    z-index: 10;
+}
+
+.note-card {
+    min-width: 300px;
+    min-height: 150px;
+    margin: 25px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    font: 3vmin/1.0 Serif;
+}
+
+
+.note-mine {
+    background-color: rgba(0, 125, 255, 0.9);
+    color: rgb(255,128,0)
+}
+
+.note-gambit {
+    background-color: rgba(0, 102, 51, 0.9);
+    color: rgb(204,204,0)
+}
+
+.note-age {
+    background-color: rgba(136, 174, 81, 0.9);
+    color: #D69629;
+}
+
+.note-border {
+    background-color: rgba(238, 220, 17, 0.9);
+    color: #E21E1D
+}
+
+
+.img {
+    width: 100%;
+    height: 70px;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.6);;
+    border: solid;
+    color: black;
+    border-radius: 8px;
+    padding: 7px 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+  }
+
+  .button:hover {
+    color: purple !important;
+  }
+
+
+/* For Make Card Page */
+  #makeCard-contain {
+      align-items: center;
+  }
+
+.makeCard-nav{ 
+    justify-content: space-evenly;
+}
+
+#makeCard-contain {
+    justify-content: space-evenly;
+}
+
+.makeCard-submit { 
+    justify-content: center;
+}
+
+.makeCard-home { 
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.note {
+    width: 100%;
+}
+
+.signature {
+    width: 100%;
+}
+
+.note-settings {
+    background-color: rgba(233, 199, 255, 0.7);
+    padding: 10px 38px 20px 38px;
+    text-align: center;
+}
+
+.note-msg {
+    background-color: rgba(43, 43, 43, 0.9);
+    padding: 28px 18px 20px 10px;
+    /* height: 100px; */
+    margin-left: 20px;
+    text-align: center;
+}
+
+.poof {
+    display: none;
+}
+
+
+/* Fix Make Cards on Big Screens */
+@media only screen and (min-width: 1000px) {
+    .note-settings {
+        max-width: 380px !important;
+        min-height: 380px;
+        transition: 350ms;
+    }
+
+    #change {
+        max-width: 380px !important;
+        min-height: 380px;
+        transition: 350ms;
+    }
+}
+
+
+/* Fix Cards on Small Screens */
+@media only screen and (max-width: 320px) {
+    .note-card  {
+        min-width: 260px;
+    }
+}
+
+
+/* For Responsive Large Screens */
+@media only screen and (min-width: 1900px) {
+    body {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media only screen and (min-width: 2260px) {
+    body {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+}
+
+@media only screen and (min-width: 2660px) {
+    body {
+        padding-left: 650px;
+        padding-right: 650px;
+    }
+}
+
+@media only screen and (min-width: 3160px) {
+    body {
+        padding-left: 800px;
+        padding-right: 800px;
+    }
+}
