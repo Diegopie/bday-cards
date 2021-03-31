@@ -1,3 +1,4 @@
+/* HTML Elements */
 body {
     padding: 10px 20px;
     margin: 10px 20px;
@@ -13,10 +14,7 @@ a {
     color: inherit;
 }
 
-.index {
-    z-index: 10;
-}
-
+/* * Note Styling */
 .note-card {
     min-width: 300px;
     min-height: 150px;
@@ -27,7 +25,7 @@ a {
     font: 3vmin/1.0 Serif;
 }
 
-
+/*  ** User Selections */
 .note-mine {
     background-color: rgba(0, 125, 255, 0.9);
     color: rgb(255,128,0)
@@ -48,6 +46,7 @@ a {
     color: #E21E1D
 }
 
+/* Element Styles */
 
 .img {
     width: 100%;
@@ -71,27 +70,16 @@ a {
 
 
 /* For Make Card Page */
-  #makeCard-contain {
+#makeCard-contain {
       align-items: center;
+      justify-content: space-evenly;
   }
 
 .makeCard-nav{ 
     justify-content: space-evenly;
 }
 
-#makeCard-contain {
-    justify-content: space-evenly;
-}
-
-.makeCard-submit { 
-    justify-content: center;
-}
-
-.makeCard-home { 
-    margin-top: 40px;
-    justify-content: center;
-}
-
+/* Yeah yeah yeah, redundant but the classes are being targeted in the js. Deal with it  */
 .note {
     width: 100%;
 }
@@ -103,13 +91,24 @@ a {
 .note-settings {
     background-color: rgba(233, 199, 255, 0.7);
     padding: 10px 38px 20px 38px;
+    border-radius: 8px;
     text-align: center;
 }
 
+.makeCard-submit { 
+    justify-content: center;
+}
+
+.makeCard-homeBtn { 
+    margin-top: 40px;
+    justify-content: center;
+}
+
 .note-msg {
-    background-color: rgba(43, 43, 43, 0.9);
+    background-color: rgba(233, 199, 255, 0.7);
     padding: 28px 18px 20px 10px;
-    /* height: 100px; */
+    border-radius: 8px;
+    color: black;
     margin-left: 20px;
     text-align: center;
 }
