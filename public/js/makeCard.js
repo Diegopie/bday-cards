@@ -36,20 +36,20 @@ $('#daemon').click((e) => {
     $('#change').addClass("note-daemon");
     currentClass = "note-daemon"; 
     // Change Image
-    $('.img').attr('src', imgPath + 'daemon-01.png')
-    dbStyle = ["note-daemon", "daemon-01.png"]
+    $('.img').attr('src', imgPath + 'daemon-02.png')
+    dbStyle = ["note-daemon", "daemon-02.png"]
 });
 
 // * Age of Empire: Remove Current Styling and Apply Age of Empire Class and Image
-$('#border').click((e) => {
+$('#zodiac').click((e) => {
     e.preventDefault();
     // Change Color
     $('#change').removeClass(currentClass);
-    $('#change').addClass("note-border");
-    currentClass = "note-border"; 
+    $('#change').addClass("note-zodiac");
+    currentClass = "note-zodiac"; 
     // Change Image
-    $('.img').attr('src', imgPath + 'borderlands-01.png');
-    dbStyle = ["note-border", "borderlands-01.png"];
+    $('.img').attr('src', imgPath + 'zodiac-01.png');
+    dbStyle = ["note-zodiac", "zodiac-01.png"];
 });
 
 // * Validate textareas; Make POST Req; Handle Success and Fail

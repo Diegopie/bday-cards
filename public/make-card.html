@@ -8,28 +8,36 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/card.css">
-    <link rel="stylesheet" href="/css/background.css">       
+    <link rel="stylesheet" href="/css/card.css">
+    <!-- <link rel="stylesheet" href="/css/background.css"> -->
+    <link rel="stylesheet" href="/css/moon.css">
     <link rel="icon" href="https://github.com/ottomated/CrewLink/raw/master/logo.png" type="image/x-icon">
-    <title>Anne's B-Day Card!</title>
+    <title>Deeana's B-Day Card!</title>
 </head>
 
 <body>
-    <!-- Star Animation -->
-    <div id="what-im-doing"></div>
-    <div id="dont-know"></div>
+    <!-- Lights Animation -->
+    <!-- <div id="what-im-doing"></div>
+    <div id="dont-know"></div> -->
+    <div class="background-container">
+        <img class="moon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+    </div>
     <main>
         <section class="row makeCard-nav">
             <h1 class="col-sm-12 col-md-8"> Happy Birthday, Diana! </h1>
             <div class="col-sm-10 col-md-3">
-                <a class="button" href="/"> Click To View Cards!</a>
+                <a class="button" href="/"> View Cards!</a>
             </div>
         </section>
         <section class='row' id='makeCard-contain'>
             <article class="col-4 note-card note-fest" id="change">
+                <h2>Text Color</h2>
                 <textarea class="note" placeholder="Write your note here!"></textarea>
                 <textarea class="signature" placeholder="Write your name here!"></textarea>
-                <img class="img" src="../img/card/festival-01.png">
+                <img class="img" src="/img/card/festival-01.png">
             </article>
             <article class="col-4 note-card note-settings">
                 <div>
@@ -37,7 +45,7 @@
                     <button class="button" id="fest"> Festival </button>
                     <button class="button" id="horror"> Horror </button>
                     <button class="button" id="daemon"> Daemon </button>
-                    <button class="button" id="border"> Borderlands </button>
+                    <button class="button" id="zodiac"> Zodiac </button>
                 </div>
             </article>
         </section>
