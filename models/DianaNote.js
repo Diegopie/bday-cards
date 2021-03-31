@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const NoteSchema = new mongoose.Schema({
+const DianaNoteSchema = new mongoose.Schema({
     note: {
         type: String,
         required: true
@@ -15,6 +15,6 @@ const NoteSchema = new mongoose.Schema({
     }
 });
 
-const Note = mongoose.model('Note', NoteSchema);
+const DianaNote = mongoose.model('Diana-Note', DianaNoteSchema);
 
-module.exports = Note;
+module.exports = DianaNote;

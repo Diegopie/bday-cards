@@ -67,7 +67,7 @@ $('#submit').click(async e => {
         $('.note-msg').removeClass('poof');
     } else {
         $('.note-msg').addClass('poof');
-        const noteRequest = await fetch('/api/note/new', {
+        const noteRequest = await fetch('/api/diana-note/new', {
             headers: {
                 'Content-Type': 'application/json'
             },

@@ -1,4 +1,4 @@
 module.exports = {
-    Note: require('./Note'),
+    DianaNote: require('./DianaNote'),
     // admin: require('./Admin')
 };
