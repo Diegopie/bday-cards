@@ -33,7 +33,7 @@ noteRouter.post('/new', (req, res) => {
 noteRouter.get('/all', (req, res) => {
     DianaNote.find({}, (err, notes) => {
         if (err) res.status(500).json(
-            handleError('Error Has Occurred in Database Search', '/api/note/all', err, true)
+            handleError('Error Has Occurred in Database Search', '/api/diana-note/all', err, true)
         );
         
         if (notes) res.status(400).json(

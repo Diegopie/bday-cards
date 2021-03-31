@@ -49,21 +49,22 @@ $.ajax({
         const solid = '-solid'
         $(".img").click((e) => {
             e.preventDefault();
-            // Update Styling
+            // *** Update Styling
             const curStyle = e.target.parentElement.classList[4];
             const modalStyle = curStyle + solid;
             $('#modal-contain').removeClass(currentClass);
             $('#modal-contain').addClass(modalStyle);
+            // **** Update currentClass So It Can Be Targeted and Removed In the Future
             currentClass = modalStyle;
-            // Update Text
+            // *** Update Text
             const text = e.target.parentElement.dataset.text;
             // console.log(text);
             $('#modal-note').text(text);
-            // Update Signature
+            // *** Update Signature
             const signature = e.target.previousElementSibling.innerText;
             // console.log(signature);
             $('#modal-signature').text(signature)
-            // Update Image
+            // *** Update Image
             const img = e.target.attributes[1].value;
             // console.log(img);
             $('#img-target').attr('src', img);

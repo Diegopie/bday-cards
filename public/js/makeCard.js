@@ -4,7 +4,8 @@ let currentClass = "note-fest"
 let dbStyle = ["note-fest", "festival-01.png"]
 const imgPath = "/img/card/"
 
-// * Festival: Remove Current Styling and Apply Festival Class and Image
+// * Event Listeners For Theme
+// ** Festival: Remove Current Styling and Apply Festival Class and Image
 $('#fest').click((e) => {
     e.preventDefault();
     // Change Color
@@ -16,7 +17,7 @@ $('#fest').click((e) => {
     dbStyle = ["note-fest", "festival-01.png"]
 });
 
-// * Horror: Remove Current Styling and Apply Horror Class and Image
+// ** Horror: Remove Current Styling and Apply Horror Class and Image
 $('#horror').click((e) => {
     e.preventDefault();
     // Change Color
@@ -28,7 +29,7 @@ $('#horror').click((e) => {
     dbStyle = ["note-horror", "horror-01.png"]
 });
 
-// * Daemon: Remove Current Styling and Apply Daemon Class and Image
+// ** Daemon: Remove Current Styling and Apply Daemon Class and Image
 $('#daemon').click((e) => {
     e.preventDefault();
     // Change Color
@@ -40,7 +41,7 @@ $('#daemon').click((e) => {
     dbStyle = ["note-daemon", "daemon-02.png"]
 });
 
-// * Age of Empire: Remove Current Styling and Apply Age of Empire Class and Image
+// ** Age of Empire: Remove Current Styling and Apply Age of Empire Class and Image
 $('#zodiac').click((e) => {
     e.preventDefault();
     // Change Color
@@ -52,13 +53,14 @@ $('#zodiac').click((e) => {
     dbStyle = ["note-zodiac", "zodiac-01.png"];
 });
 
-// * Validate textareas; Make POST Req; Handle Success and Fail
+// * Submit Listener: Validate textareas; Make POST Req; Handle Success and Fail
 $('#submit').click(async e => {
     e.preventDefault();
+    // ** Remove Message Container
     $('.note-msg').addClass('poof');
     const userNote = document.querySelector('.note').value;
     const userSignature = document.querySelector('.signature').value;
-
+    // ** Validation
     if (!userNote) {
        $('.note-msg').text('Your Note Cannot Be Empty!');
        $('.note-msg').removeClass('poof');
@@ -66,6 +68,7 @@ $('#submit').click(async e => {
         $('.note-msg').text('Your Signature Cannot Be Empty!');
         $('.note-msg').removeClass('poof');
     } else {
+        // *** Pass Validation: MAke POST
         $('.note-msg').addClass('poof');
         const noteRequest = await fetch('/api/diana-note/new', {
             headers: {
@@ -79,17 +82,18 @@ $('#submit').click(async e => {
             method: 'POST'
         });
         const noteResponse = await noteRequest.json();
+        // *** POST Error
         console.log(noteResponse.message.msgError);
         if (noteResponse.message.msgError) {
             $('.note-msg').text("Your Note Couldn't Be Sent! Refresh and Try Again 😐");
             $('.note-msg').removeClass('poof');
         } else {
+            // *** POST Success
             $('.note-msg').text("Your Note Was Sent!");
             $('.note-msg').removeClass('poof');
             $('#submit').addClass('poof');            
             const redirect = `<a class="col button" href="/"> Click To View Your Card!</a>`
             $('.note-msg').append(redirect);
-
         }
     }
-})
+});
