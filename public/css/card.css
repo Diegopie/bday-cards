@@ -26,19 +26,37 @@ a {
 }
 
 /*  ** User Selections */
-.note-mine {
-    background-color: rgba(0, 125, 255, 0.9);
-    color: rgb(255,128,0)
-}
-
-.note-gambit {
-    background-color: rgba(0, 102, 51, 0.9);
+/* Festival */
+.note-fest {
+    background-color: rgba(40, 48, 43, 0.9);
     color: rgb(204,204,0)
 }
 
-.note-age {
-    background-color: rgba(136, 174, 81, 0.9);
-    color: #D69629;
+.note-fest-solid {
+    background-color: rgba(40, 48, 43, 1.0);
+    color: rgb(204,204,0);
+}
+
+/* Horror */
+.note-horror {
+    background-color: rgba(122, 13, 1, 0.9);
+    color: rgb(33, 30, 23)
+}
+
+.note-horror-solid {
+    background-color: rgba(122, 13, 1, 1.0);
+    color: rgb(33, 30, 23)
+}
+
+/* Daemon */
+.note-daemon {
+    background-color: rgba(204, 150, 14, 0.9);
+    color: rgb(122, 13, 1);
+}
+
+.note-daemon-solid {
+    background-color: rgba(204, 150, 14, 1.0);
+    color: rgb(122, 13, 1);
 }
 
 .note-border {

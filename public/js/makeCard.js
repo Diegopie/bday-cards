@@ -1,43 +1,43 @@
 // * Stores Current Class Being Rendered to Correctly Target and Replace Styles
-let currentClass = "note-gambit"
+let currentClass = "note-fest"
 // * Default Styling to Send to DB, Listeners Will Update this Value
-let dbStyle = ["note-gambit", "gambitMotes-01.png"]
-const imgPath = "../img/card/"
+let dbStyle = ["note-fest", "festival-01.png"]
+const imgPath = "/img/card/"
 
-// * Minecraft: Remove Current Styling and Apply Minecraft Class and Image
-$('#mine').click((e) => {
+// * Festival: Remove Current Styling and Apply Festival Class and Image
+$('#fest').click((e) => {
     e.preventDefault();
     // Change Color
     $('#change').removeClass(currentClass);
-    $('#change').addClass("note-mine");
-    currentClass = "note-mine"; 
+    $('#change').addClass("note-fest");
+    currentClass = "note-fest"; 
     // Change Image
-    $('.img').attr('src', imgPath + 'mineGrass-01.png')
-    dbStyle = ["note-mine", "mineGrass-01.png"]
+    $('.img').attr('src', imgPath + 'festival-01.png')
+    dbStyle = ["note-fest", "festival-01.png"]
 });
 
-// * Gambit: Remove Current Styling and Apply Gambit Class and Image
-$('#gambo').click((e) => {
+// * Horror: Remove Current Styling and Apply Horror Class and Image
+$('#horror').click((e) => {
     e.preventDefault();
     // Change Color
     $('#change').removeClass(currentClass);
-    $('#change').addClass("note-gambit");
-    currentClass = "note-gambit"; 
+    $('#change').addClass("note-horror");
+    currentClass = "note-horror"; 
     // Change Image
-    $('.img').attr('src', imgPath + 'gambitMotes-01.png')
-    dbStyle = ["note-gambit", "gambitMotes-01.png"]
+    $('.img').attr('src', imgPath + 'horror-01.png')
+    dbStyle = ["note-horror", "horror-01.png"]
 });
 
-// * Age of Empire: Remove Current Styling and Apply Age of Empire Class and Image
-$('#empire').click((e) => {
+// * Daemon: Remove Current Styling and Apply Daemon Class and Image
+$('#daemon').click((e) => {
     e.preventDefault();
     // Change Color
     $('#change').removeClass(currentClass);
-    $('#change').addClass("note-age");
-    currentClass = "note-age"; 
+    $('#change').addClass("note-daemon");
+    currentClass = "note-daemon"; 
     // Change Image
-    $('.img').attr('src', imgPath + 'ageEmpire-01.png')
-    dbStyle = ["note-age", "ageEmpire-01.png"]
+    $('.img').attr('src', imgPath + 'daemon-01.png')
+    dbStyle = ["note-daemon", "daemon-01.png"]
 });
 
 // * Age of Empire: Remove Current Styling and Apply Age of Empire Class and Image
@@ -87,7 +87,7 @@ $('#submit').click(async e => {
             $('.note-msg').text("Your Note Was Sent!");
             $('.note-msg').removeClass('poof');
             $('#submit').addClass('poof');            
-            const redirect = `<a class="col button" href="./card.html"> Click To View Your Card!</a>`
+            const redirect = `<a class="col button" href="/"> Click To View Your Card!</a>`
             $('.note-msg').append(redirect);
 
         }
