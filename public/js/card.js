@@ -11,11 +11,11 @@ $.ajax({
     },
     error: (error) => {
         console.log(error);
-        console.log(error.responseJSON.notes);
+        // console.log(error.responseJSON.notes);
         const noteData = error.responseJSON.notes
         // ** Render Each Note
         noteData.forEach(note => {
-            console.log(note.note.length);
+            // console.log(note.note.length);
             if (note.note.length > 150) {
                 const newNoteLong = `
                     <article 
@@ -57,15 +57,15 @@ $.ajax({
             currentClass = modalStyle;
             // Update Text
             const text = e.target.parentElement.dataset.text;
-            console.log(text);
+            // console.log(text);
             $('#modal-note').text(text);
             // Update Signature
             const signature = e.target.previousElementSibling.innerText;
-            console.log(signature);
+            // console.log(signature);
             $('#modal-signature').text(signature)
             // Update Image
             const img = e.target.attributes[1].value;
-            console.log(img);
+            // console.log(img);
             $('#img-target').attr('src', img);
             $("#validateModal").modal();
         });
